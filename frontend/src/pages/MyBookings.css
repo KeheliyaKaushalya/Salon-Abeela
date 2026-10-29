@@ -1,0 +1,82 @@
+.bk-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--border)
+}
+
+.bkc {
+    background: #fff;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: background .2s
+}
+
+.bkc:hover {
+    background: var(--warm)
+}
+
+.bkl {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.bk-badge {
+    width: 50px;
+    text-align: center;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 7px 4px;
+    flex-shrink: 0
+}
+
+.bk-mon {
+    display: block;
+    font-size: 9px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 600
+}
+
+.bk-day {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    color: var(--forest);
+    line-height: 1
+}
+
+.bkc h3 {
+    font-size: 15px;
+    color: var(--forest);
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-family: 'Cormorant Garamond', serif
+}
+
+.bk-meta {
+    display: flex;
+    gap: 14px;
+    font-size: 11px;
+    color: var(--muted);
+    flex-wrap: wrap
+}
+
+.bk-notes {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 4px
+}
+
+.bkr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink: 0
+}

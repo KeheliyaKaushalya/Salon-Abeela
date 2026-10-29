@@ -1,0 +1,131 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--forest);
+}
+
+.auth-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba(98, 129, 65, 0.2) 0%, transparent 60%);
+}
+
+.auth-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 420px;
+    animation: fadeUp 0.5s ease;
+}
+
+.auth-brand {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.auth-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.auth-logo span {
+    color: var(--sage);
+}
+
+.auth-brand h1 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.auth-brand p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.auth-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 32px;
+}
+
+.auth-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+}
+
+.auth-tabs button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    transition: all 0.2s;
+}
+
+.auth-tabs button.active {
+    color: var(--green);
+    border-bottom-color: var(--green);
+}
+
+.auth-submit {
+    width: 100%;
+    padding: 13px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.auth-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+input.input-err {
+    border-color: #c44;
+}
+
+.demo-box {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.demo-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.demo-btn {
+    width: 100%;
+    justify-content: center;
+}
